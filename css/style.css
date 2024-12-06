@@ -1,0 +1,153 @@
+body {
+  background: url(../img/background.svg) no-repeat center center;
+  background-size: cover;
+  color: white;
+  display: flex;
+  font-family: 'gilroy';
+  font-size: 18px;
+  overflow-x: hidden;
+}
+
+a {
+  color: rgb(83, 70, 54);
+}
+
+.container {
+  margin-top: 200px;
+  display: flex;
+  justify-content: center;
+  /* background: #151418;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px 0 black; */
+  /* width: 1500px; */
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+@media (max-width:1000px) {
+  body {
+    justify-content: center;
+  }
+  .container {
+    padding: 0;
+    margin-top: 30px;
+  }
+  .main {
+    justify-content: center;
+  }
+  .desc {
+    padding: 50px;
+  }
+  .clock-block {
+    padding-left: 50px;
+  }
+}
+
+@media (max-width:480px) {
+  .container {
+    width: 100vw;
+  }
+  .main {
+    width: 100vw;
+  }
+  .title {
+    width: 100px;
+  }
+  .desc {
+    font-size: 12px;
+  }
+  #output {
+    font-size: 50px;
+  }
+  .btn-clock {
+    height: 100px;
+    flex-direction: column;
+  }
+  .links {
+    width: 100vw;
+    padding-left: 10px;
+  }
+  .links-title {
+    font-size: 15px;
+  }
+}
+
+.main {
+  /* width: 1400px; */
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 30px;
+  font-family: 'gilroy-medium';
+}
+
+.clock-block {
+  overflow: hidden;
+}
+
+.output-block {
+  margin-top: 50px;
+  width: 500px;
+  font-size: 120px;
+  text-align: start;
+}
+
+.btn-block {
+  margin-top: 20px;
+  display: flex;
+}
+
+.btn-clock {
+  max-width: 380px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-elclock {
+  border: none;
+  /* background-color: #7c5f46; */
+  background-color: #15141f;
+  color: white;
+  font-family: 'gilroy';
+  font-size: 15px;
+  width: 170px;
+  height: 40px;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+.btn-stclock {
+  border: none;
+  background-color: #15141f;
+  color: rgb(141, 141, 141);
+  font-family: 'gilroy';
+  font-size: 15px;
+  width: 170px;
+  height: 40px;
+  border-radius: 10px;
+}
+
+.desc {
+  margin-top: 200px;
+  max-width: 800px;
+  text-align: justify;
+  letter-spacing: 0.2px;
+  line-height: 26px;
+  color: #c9c9c9;
+}
+
+.desc-fp > span {
+  font-family: 'gilroy-medium';
+}
+
+.ul-title {
+  margin-top: 50px; 
+  color: white;
+  text-align: left;
+}
+
+.links-title {
+  font-size: 25px;
+  text-align: left;
+}
